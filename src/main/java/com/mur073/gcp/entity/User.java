@@ -59,4 +59,6 @@ public class User extends BaseEntity {
     @Column(name = "valid_through", nullable = false)
     private LocalDateTime validThrough;
 
+    @Column(name = "personal_id_number", nullable = false, unique = true, length = 14)
+    private String personalIdNumber;
 }
